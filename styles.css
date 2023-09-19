@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 body,
 ul {
     margin: 0;
@@ -14,6 +17,9 @@ header {
     background-color:rgba(66, 62, 62, 0.911);
     color: white;
     padding: 0.5px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 /* Navigation Styles */
