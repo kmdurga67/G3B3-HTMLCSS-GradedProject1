@@ -10,7 +10,6 @@ ul {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Header Styles */
 header {
     font-size: 30px;
     text-align: center;
@@ -22,7 +21,14 @@ header {
     z-index: 100;
 }
 
-/* Navigation Styles */
+.header-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(66, 62, 62, 0.911);
+    color: white;
+}
+
 nav ul {
     background-color: #7e7979;
 }
@@ -157,6 +163,7 @@ input[type="time"] {
     border: none; 
     border-bottom: 2px solid #007BFF; 
     font-size: 16px;
+    outline: none;
 }
 input[type="text"]:focus,
 input[type="tel"]:focus,
@@ -165,6 +172,7 @@ select:focus,
 input[type="date"]:focus,
 input[type="time"]:focus {
     border: none;
+    outline: none;
     border-bottom: 2px solid #0056b3;
 }
 
@@ -218,9 +226,12 @@ input:valid {
 }
 
 .fixed-image {
-    width: 50%;
-    position: sticky;
+    width: 50%; 
+    position: fixed;
     top: 0;
+    right: 0;
+    height: 100%; 
+    overflow: hidden;
 }
 
 .fixed-image img {
@@ -261,5 +272,24 @@ input:valid {
     .reset-button,
     .submit-button {
         font-size: 14px;
+    }
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.column {
+    float: left;
+    width: 48%; 
+    margin-right: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        margin-right: 0;
     }
 }
