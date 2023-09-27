@@ -69,7 +69,6 @@ nav ul li ul li {
     float: left;;
 }
 
-/* Offer Section Styles */
 .offers {
     text-align: center;
     margin: 1% 0 1% 0;
@@ -150,7 +149,6 @@ footer {
     width: 100%;
 }
 
-/* lab-test.html */
 input[type="text"],
 input[type="tel"],
 input[type="email"],
@@ -239,7 +237,6 @@ input:valid {
     height: auto;
 }
 
-/* Add responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -273,6 +270,11 @@ input:valid {
     .submit-button {
         font-size: 14px;
     }
+
+    .column {
+        width: 100%;
+        margin-right: 0;
+    }
 }
 
 .row::after {
@@ -285,11 +287,4 @@ input:valid {
     float: left;
     width: 48%; 
     margin-right: 2%;
-}
-
-@media screen and (max-width: 768px) {
-    .column {
-        width: 100%;
-        margin-right: 0;
-    }
 }
